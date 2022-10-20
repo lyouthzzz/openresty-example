@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  openresty:
+    container_name: openresty_example
+    image: openresty/openresty:1.21.4.1-centos7
+    ports:
+      - '8080:80'
+      - '8443:443'
+    volumes:
+      - ./nginx/conf:/usr/local/openresty/nginx/conf
+      - ./nginx/html:/usr/local/openresty/nginx/html
+      - ./nginx/logs:/usr/local/openresty/nginx/logs
