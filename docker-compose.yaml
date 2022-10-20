@@ -11,3 +11,4 @@ services:
       - ./nginx/conf:/usr/local/openresty/nginx/conf
       - ./nginx/html:/usr/local/openresty/nginx/html
       - ./nginx/logs:/usr/local/openresty/nginx/logs
+      - ./nginx/lua:/usr/local/openresty/nginx/lua
